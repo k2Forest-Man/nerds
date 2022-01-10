@@ -577,7 +577,7 @@ img {
 /*CATALOG*/
 .section-header {
 	width: 1160px;
-	padding: 78px 40px 108px 40px;
+	padding: 78px 90px 108px 90px;
 	margin: 0 auto;
 	background-color: var(--basic-grey);
 }
