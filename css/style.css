@@ -65,7 +65,6 @@
   line-height: 24px;
   color: var(--basic-black);
   background-color: var(--basic-white);
-
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -226,6 +225,7 @@ img {
   display: grid;
   grid-template-columns: 300px 300px 300px;
   column-gap: 100px;
+  row-gap: 40px;
   margin-bottom: 80px;
 }
 
@@ -604,6 +604,12 @@ img {
 	margin-bottom: 55px;
 }
 
+/*Form of price*/
+
+.form-filter {
+	margin-bottom: 48px;
+}
+
 .fieldset-box {
 	border: none;
 	margin: 0;
@@ -632,11 +638,17 @@ img {
 	margin-bottom: 48px;
 }
 
+.fieldset-price {
+	margin-bottom: 48px;
+}
+
 .content-legend {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 30px;
 	text-transform: uppercase;
+	margin-bottom: 10px;
+	padding: 0;
 }
 
 .content-label {
@@ -648,6 +660,15 @@ img {
 .list-filter {
 	list-style: none;
 	padding: 0;
+	margin: 0;
+}
+
+.list-filter li:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.fieldset-grids {
+	margin-bottom: 41px;
 }
 
 .button-filter {
