@@ -430,7 +430,7 @@ img {
 
 .map-marker {
 	margin-top: 70px;
-	margin-left: 775px;
+	margin-left: 765px;
 	width: 231px;
   height: 190px;
   z-index: 2;
@@ -441,7 +441,6 @@ img {
 	margin: 0px 50px 50px;
 	padding-top: 50px;
 }
-
 
 .modal-window-header {
 	font-size: 18px;
@@ -478,12 +477,20 @@ img {
 	background-color: var(--basic-red);
 }
 
+.contacts-button:hover {
+	background-color: var(--basic-red-hover);
+}
+
+.contacts-button:active {
+	background-color: var(--basic-red-active);
+	color: var(--basic-white-opacity);
+}
+
 .social-footer {
 	display: grid;
 	grid-template-columns: 261px auto;
 	column-gap: 139px;
 	align-items: center;
-	/*height: 217px;*/
 	margin-top: 54px;
 }
 
