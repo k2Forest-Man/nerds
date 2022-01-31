@@ -95,6 +95,10 @@ img {
 	display: flex;
 }
 
+.active-link {
+	border-bottom: 2px solid var(--basic-red);
+}
+
 .main-header-logo {
 	width: 160px;
 	margin-top: 48px;
@@ -108,18 +112,6 @@ img {
 .main-header-logo:active {
   opacity: 0.3;
 }
- 
-.container-main-slider {
-	padding: 0 90px;  /*изначально было 40px*/
-	background-color: var(--basic-grey);
-	margin-bottom: 80px;
-}
-
-.container-main-slider p {
-	margin-bottom: 0;
-	margin-top: 0;
-}
-
 
 .site-navigation {
 	display: flex;
@@ -167,6 +159,17 @@ img {
 }
 
 /*Slider*/
+
+.container-main-slider {
+	padding: 0 90px;  /*изначально было 40px*/
+	background-color: var(--basic-grey);
+	margin-bottom: 80px;
+}
+
+.container-main-slider p {
+	margin-bottom: 0;
+	margin-top: 0;
+}
 
 .header-slider {
 	font-weight: 500;
@@ -493,8 +496,6 @@ img {
 	align-items: center;
 	margin-top: 54px;
 }
-
-
 
 .social-network-list {
   display: grid;
