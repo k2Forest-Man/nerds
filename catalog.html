@@ -22,7 +22,7 @@
 				<div class="nav-wrapper container">
 					<div class="main-header-logo">
 						<a href="index.html">
-							<img src="img/nerds-logo.svg" width="160" height="65"alt="Логотип дизайн-студии Нёрдс">
+							<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
 						</a>
 					</div>
 					<ul class="site-navigation">
@@ -49,9 +49,11 @@
 				<section class="section-filters">
 				<!-- <h2>Фильтр</h2> -->
 					<form class="form-filter" method="post" action="https://echo.htmlacademy.ru">
-						<fieldset class="fieldset-box fieldset-price">
+						<fieldset class="fieldset-box">
 		          <legend class="content-legend header-form">Стоимость:</legend>
-		          <input type="range" id="priceslider" name="priceslider" min="0" max="15000" step="1">
+		          <div class="wrapper-range">
+		          	<input class="range-line" type="range" id="priceslider" name="priceslider" min="0" max="15000" step="1">
+		          </div>
 		          <p class="content-label">
 			          <label>От <input class="input-field input-from" name="from" type="text" value="0"></label>
 			          <label>До <input class="input-field" name="before" type="text" value="15000"></label>          	
@@ -96,7 +98,7 @@
 									<label for="filter-gallery">Галерея</label>
 								</li>
 								<li>
-									<input type="checkbox" name="basket" id="filter-basket" checked>
+									<input type="checkbox" name="basket" id="filter-basket">
 									<label for="filter-basket">Корзина</label>
 								</li>
 							</ul>				

@@ -653,6 +653,25 @@ img {
 	border: none;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 48px;
+}
+
+.fieldset-box p {
+	margin: 0;
+}
+
+.wrapper-range {
+	width: 260px;
+	height: 80px;
+	background-color: var(--basic-grey);
+  border-radius: 3px;
+  margin-bottom: 14px;
+  display: flex;
+}
+
+.range-line {
+	margin: auto;
+	width: 205px;
 }
 
 .input-field {
@@ -674,11 +693,7 @@ img {
 }
 
 .header-form {
-	margin-bottom: 48px;
-}
-
-.fieldset-price {
-	margin-bottom: 48px;
+	margin-bottom: 54px;
 }
 
 .content-legend {
@@ -707,7 +722,7 @@ img {
 }
 
 .fieldset-grids {
-	margin-bottom: 41px;
+	margin-bottom: 47px;
 }
 
 .button-filter {
