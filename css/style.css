@@ -759,6 +759,8 @@ img {
 	text-shadow: 0px 4px 4px var(--basic-black-active-shadow);
 }
 
+/* section-catalog */
+
 .sort-title {
 	font-size: 18px;
 	font-weight: 700;
@@ -791,11 +793,25 @@ img {
 	color: var(--basic-black);
 }
 
+.wrapper-card {
+	width: 100%;
+	position: relative;
+}
+
 .card-product {
 	background-color: var(--basic-grey);
-	padding: 26px 52px 54px 52px;
+	padding-top: 26px;
+  padding-bottom: 44px;
 	text-align: center;
+	width: 100%;
 	margin: 0;
+	display: none;
+  position: absolute;
+  bottom: 0px;
+}
+
+.wrapper-card:hover .card-product {
+  display: block;
 }
 
 .card-product h3 {

@@ -130,8 +130,8 @@
 
 					<ul class="list-products">
 						<li>
-							<div>
-								<img src="img/sedona.png" width="358" height="578" alt="Принт макета Sedona">
+							<div class="wrapper-card">
+								<img src="img/sedona.png" width="360" height="580" alt="Принт макета Sedona">
 								<div class="card-product">
 									<h3><a class="product-header" href="#">Sedona</a></h3>
 									<p class="discription-product">Информационный сайт<br> для туристов</p>
@@ -140,8 +140,8 @@
 							</div>
 						</li>
 						<li>
-							<div>
-								<img src="img/pink.png" width="358" height="578" alt="Принт макета Pink App">
+							<div class="wrapper-card">
+								<img src="img/pink.png" width="360" height="580" alt="Принт макета Pink App">
 								<div class="card-product">
 									<h3><a class="product-header" href="#">Pink App</a></h3>
 									<p class="discription-product">Продуктовый лендинг<br>приложения для iOS и Android</p>
@@ -150,8 +150,8 @@
 							</div>
 						</li>
 						<li>
-							<div>
-								<img src="img/barbershop.png" width="358" height="578" alt="Принт макета Барбершоп Бородинский">
+							<div class="wrapper-card">
+								<img src="img/barbershop.png" width="360" height="580" alt="Принт макета Барбершоп Бородинский">
 								<div class="card-product">
 									<h3><a class="product-header" href="#">Barbershop</a></h3>
 									<p class="discription-product">Сайт салона красоты.<br>Для мужчин, да.</p>
@@ -160,8 +160,8 @@
 							</div>
 						</li>
 						<li>
-							<div>
-								<img src="img/mishka.png" width="358" height="578" alt="Принт макета Mishka">
+							<div class="wrapper-card">
+								<img src="img/mishka.png" width="360" height="580" alt="Принт макета Mishka">
 								<div class="card-product">
 									<h3><a class="product-header" href="#">Mishka</a></h3>
 									<p class="discription-product">Интернет-магазин<br>вязаных игрушек</p>
@@ -170,8 +170,8 @@
 							</div>
 						</li>
 						<li>
-							<div>
-								<img src="img/aplus.png" width="358" height="578" alt="Принт макета A Plus">
+							<div class="wrapper-card">
+								<img src="img/aplus.png" width="360" height="580" alt="Принт макета A Plus">
 								<div class="card-product">
 									<h3><a class="product-header" href="#">A Plus</a></h3>
 									<p class="discription-product">Лендинг курсов повышения<br>квалификации</p>
@@ -180,8 +180,8 @@
 							</div>
 						</li>
 						<li>
-							<div>
-								<img src="img/kvast.png" width="358" height="578" alt="Принт макета Кваст">
+							<div class="wrapper-card">
+								<img src="img/kvast.png" width="360" height="580" alt="Принт макета Кваст">
 								<div class="card-product">
 									<h3><a class="product-header" href="#">Кваст</a></h3>
 									<p class="discription-product">Промо-сайт производителя<br>крафтового кваса</p>
@@ -205,19 +205,29 @@
 	</main>
 
 	<footer class="main-footer"> <!-- Подвал сайта -->
-		<div class="container-main-footer">
-			<img class="contacts-map" src="img/map.png" width="1440" height="416" alt="Местоположение на карте">
-			<div class="modal-window">
-				<h2 class="modal-window-header">Nёrds disign studio</h2>
-				<p class="contacts">
-					191186, Санкт-Петербург,<br>
-					ул. Б. Конюшенная, д. 19/8<br>
-				</p>
-				<p class="block-tel"><a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-				<a class="contacts-button" href="blank.html">Напишите нам</a>
+		<section class="contacts-main-footer container-main-footer">
+
+			<div class="contacts-map">
+				<img src="img/map.png" width="1440" height="416" alt="Местоположение на карте">
 			</div>
-			<!-- <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Указатель на студию"> -->
-		</div>
+
+			<div class="modal-window">
+				<div class="wrapper-modal-window">
+					<h2 class="modal-window-header">Nёrds disign studio</h2>
+					<p class="contacts">
+						191186, Санкт-Петербург,<br>
+						ул. Б. Конюшенная, д. 19/8<br>
+					</p>
+					<p class="block-tel"><a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+					<a class="contacts-button" href="blank.html">Напишите нам</a>
+				</div>
+			</div>	
+
+			<div class="map-marker">
+				<img src="img/map-marker.png" width="231" height="190" alt="Указатель на студию">
+			</div>
+			
+		</section>
 
 		<section class="social-footer container">
 			<!-- <h2>Мы в соцсетях</h2> -->
@@ -240,5 +250,6 @@
 			</div>	
 		</section>
 	</footer>
+	
 </body>
 </html>
