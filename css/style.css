@@ -660,13 +660,21 @@ img {
 	margin: 0;
 }
 
+.inputs-box {
+	width: 260px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px auto;
+  row-gap: 14px;
+}
+
 .wrapper-range {
 	width: 260px;
 	height: 80px;
 	background-color: var(--basic-grey);
   border-radius: 3px;
   margin-bottom: 14px;
-  display: flex;
+  grid-column: 1 / -1;
 }
 
 .range-line {
@@ -686,10 +694,18 @@ img {
 	border-radius: 3px;
 	vertical-align: middle;
 	background-color: var(--basic-grey);
+	margin-left: 12px;
+	text-transform: uppercase;
 }
 
-.input-from {
-	margin-right: 33px;
+.content-label {
+	font-weight: 400;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+
+.label-before {
+	margin-left: auto;
 }
 
 .header-form {
@@ -703,12 +719,6 @@ img {
 	text-transform: uppercase;
 	margin-bottom: 10px;
 	padding: 0;
-}
-
-.content-label {
-	font-weight: 400;
-	line-height: 22px;
-	text-transform: uppercase;
 }
 
 .list-filter {

@@ -51,13 +51,17 @@
 					<form class="form-filter" method="post" action="https://echo.htmlacademy.ru">
 						<fieldset class="fieldset-box">
 		          <legend class="content-legend header-form">Стоимость:</legend>
-		          <div class="wrapper-range">
-		          	<input class="range-line" type="range" id="priceslider" name="priceslider" min="0" max="15000" step="1">
+		          <div class="inputs-box">
+			          <div class="wrapper-range">
+			          	<input class="range-line" type="range" id="priceslider" name="priceslider" min="0" max="15000" step="1">
+			          </div>
+				        <label class="content-label">
+				         От<input class="input-field" name="from" type="text" value="0">
+				        </label>
+				        <label class="content-label label-before">
+				         До<input class="input-field" name="before" type="text" value="15000">
+				        </label>          	
 		          </div>
-		          <p class="content-label">
-			          <label>От <input class="input-field input-from" name="from" type="text" value="0"></label>
-			          <label>До <input class="input-field" name="before" type="text" value="15000"></label>          	
-		          </p>
 		        </fieldset>
 
 						<fieldset class="fieldset-box fieldset-grids"> <!-- радиокнопки, при одинаковом атрибуте name, value всегда должны быть разными!!! -->
