@@ -643,7 +643,7 @@ img {
 	margin-bottom: 55px;
 }
 
-/*Form of price*/
+/* section-filters */
 
 .form-filter {
 	margin-bottom: 48px;
@@ -678,8 +678,10 @@ img {
 }
 
 .range-line {
-	margin: auto;
+	display: block;
 	width: 205px;
+	text-align: center;
+	margin: 33px auto;
 }
 
 .input-field {
@@ -708,10 +710,6 @@ img {
 	margin-left: auto;
 }
 
-.header-form {
-	margin-bottom: 54px;
-}
-
 .content-legend {
 	font-weight: 700;
 	font-size: 18px;
@@ -719,6 +717,10 @@ img {
 	text-transform: uppercase;
 	margin-bottom: 10px;
 	padding: 0;
+}
+
+.header-form {
+	margin-bottom: 48px;
 }
 
 .list-filter {
@@ -794,7 +796,7 @@ img {
 }
 
 .wrapper-card {
-	width: 100%;
+	width: 360px;
 	position: relative;
 }
 
