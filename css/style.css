@@ -67,7 +67,7 @@
   background-color: var(--basic-white);
   min-height: 100%;
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  grid-template-rows: min-content 1fr min-content; /* прижимаем футер к низу */
   align-content: start;
 }
 
@@ -86,13 +86,23 @@ img {
 	height: auto;
 }
 
-.main-header .container {
-	padding: 0 90px; /*изначально было 40px*/
+/* Шапка 100% width */
+
+.main-header {
+	width: 100%;
 	background-color: var(--basic-grey);
 }
 
+/* .main-header .container {
+	padding: 0 90px; // изначально было 40 px
+	background-color: var(--basic-grey);
+} */
+
+/* Шапка 100% width */
+
 .nav-wrapper {
 	display: flex;
+	padding-top: 45px;
 }
 
 .active-link {
@@ -101,7 +111,6 @@ img {
 
 .main-header-logo {
 	width: 160px;
-	margin-top: 48px;
 	/*margin-right: 202px;*/
 }
 
@@ -117,11 +126,11 @@ img {
 	display: flex;
 	margin-left: auto;
   margin-right: auto;
-	margin-top: 75px;
-	justify-content: space-between;
 	list-style: none;
 	padding: 0;
 	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .site-navigation li:not(:last-child) {
@@ -134,7 +143,8 @@ img {
 }
 
 .basket {
-	margin-top: 75px;
+	display: flex;
+	align-items: center;
 	min-width: 120px;
 }
 
@@ -531,7 +541,7 @@ img {
 
 .text-sail {
 	color: var(--color-footer-text);
-	ont-weight: 400;
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
 }
