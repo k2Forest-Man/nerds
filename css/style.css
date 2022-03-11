@@ -81,6 +81,19 @@ a {
 	text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -124,13 +137,18 @@ img {
 
 .site-navigation {
 	display: flex;
-	margin-left: auto;
-  margin-right: auto;
+	margin: 0 auto;
 	list-style: none;
 	padding: 0;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.site-navigation a {
+  display: block;
+  padding-bottom: 13px;
+  padding-top: 15px;
 }
 
 .site-navigation li:not(:last-child) {
@@ -210,6 +228,10 @@ img {
 }
 
 .slider-item-text .header-slider {
+	margin-bottom: 25px;
+}
+
+.slider-item-text .desc-slider {
 	margin-bottom: 37px;
 }
 
@@ -220,7 +242,6 @@ img {
 
 .slider-button {
 	display: inline-block;
-	margin-top: 27px;
 	background-color: var(--basic-red);
 	color: var(--basic-white);
 	padding: 16px 54px 16px 54px;
