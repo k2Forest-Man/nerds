@@ -106,13 +106,6 @@ img {
 	background-color: var(--basic-grey);
 }
 
-/* .main-header .container {
-	padding: 0 90px; // изначально было 40 px
-	background-color: var(--basic-grey);
-} */
-
-/* Шапка 100% width */
-
 .nav-wrapper {
 	display: flex;
 	padding-top: 45px;
@@ -189,7 +182,6 @@ img {
 /*Slider*/
 
 .container-main-slider {
-	padding: 0 90px;  /*изначально было 40px*/
 	background-color: var(--basic-grey);
 	margin-bottom: 80px;
 }
@@ -431,28 +423,29 @@ img {
 
 .main-footer {
   margin-top: 80px;
-}
-
-.contacts-main-footer {
 	display: grid;
+  grid-template-rows: min-content min-content;
 }
 
 .container-main-footer {
-	width: 1340px; /*ширина макета 1440px*/
 	margin: 0 auto;
+	display: grid;
+	position: relative;
 }
 
 .contacts-map {
-	width: 1340px; /*ширина макета 1440px*/
-	height: 416px;
 	z-index: 1;
-	position: relative;
 	margin: 0 auto;
+}
+
+.contacts-map img {
+	display:block;
+  width: 100%;
 }
 
 .modal-window {
 	margin-top: 54px;
-	margin-left: 100px;
+	margin-left: 150px;
 	width: 320px;
 	min-height: 310px;
   z-index: 2;
@@ -463,8 +456,8 @@ img {
 }
 
 .map-marker {
-	margin-top: 70px;
-	margin-left: 765px;
+	margin-top: 86px;
+	margin-left: 822px;
 	width: 231px;
   height: 190px;
   z-index: 2;
@@ -525,7 +518,7 @@ img {
 	grid-template-columns: 261px auto;
 	column-gap: 139px;
 	align-items: center;
-	margin-top: 54px;
+	margin-top: 68px;
 }
 
 .social-network-list {
@@ -537,8 +530,11 @@ img {
 	padding: 0;
 }
 
-.social-network {
-	margin: 68px 0;
+.social-slogan {
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+	grid-gap: 10px;
+	padding-top: 7px;
 }
 
 .social-slogan p {
@@ -546,18 +542,12 @@ img {
 	padding: 0;
 }
 
-.social-slogan {
-	display: grid;
-	grid-template-rows: repeat(3, auto);
-	grid-gap: 10px;
-}
-
 .text-slogan {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 36px;
 	color: var(--basic-black);
-	margin-top: 75px;
+	/* margin-top: 75px; */
 }
 
 .text-sail {
@@ -638,8 +628,8 @@ img {
 
 /*CATALOG*/
 .section-header {
-	width: 1160px;
-	padding: 78px 90px 108px 90px;
+	width: 100%;
+	padding: 78px 0px 108px 0px;
 	margin: 0 auto;
 	background-color: var(--basic-grey);
 }
