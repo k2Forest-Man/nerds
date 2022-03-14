@@ -169,6 +169,7 @@
 				</ul>
 			</section>
 			<div class="rectangle"></div>
+
 		</div>
 	</main>
 
@@ -186,7 +187,7 @@
 						ул. Б. Конюшенная, д. 19/8<br>
 					</p>
 					<p class="block-tel"><a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-					<a class="contacts-button" href="#">Напишите нам</a>
+					<a class="contacts-button" href="#!">Напишите нам</a>
 				</div>
 			</div>	
 
@@ -195,18 +196,46 @@
 			</div>
 		</section>
 
+		<section class="popap">
+			<div class="wrapper-popap">
+				<h3 class="visually-hidden">Форма отправки обратной связи</h3>
+				<h2>Напишите нам</h2>
+				<div class="button-close-popap">
+					<img class="close-button-popap" src="img/close-button-popap.svg" width="21" height="21" alt="Кнопка закрытия меню">
+				</div>
+
+				<form class="popap-form" method="post" action="https://echo.htmlacademy.ru">
+					<p class="popap-item">
+						<label for="name-name">Ваше имя:</label><br>
+						<input class="input-name" id="name-name" type="text" name="name" placeholder="Имя Фамилия">
+					</p>
+
+					<p class="popap-item">
+						<label for="login-email">Ваш email:</label><br>
+						<input class="input-email" id="login-email" type="email" name="email" placeholder="email@example.com">
+					</p>
+
+					<p class="popap-item-text">
+						<label for="letter-field">Текст письма:</label><br>
+						<input class="input-text" name="letter-field" id="letter-field" rows="5" cols="50" placeholder="В свободной форме"></input>
+					</p>
+				</form>
+				<a class="popap-button" href="#">Отправить</a>
+			</div>
+		</section>
+
 		<section class="social-footer container">
 			<h2 class="visually-hidden">Мы в соцсетях</h2>
 			<div class="social-network">
 				<ul class="social-network-list">
 					<li>
-						<a class="social-button-vk" href="#"><img src="img/social/vk.svg" alt="Вконтакте"></a>
+						<a class="social-button" href="#"><img src="img/social/vk.svg" alt="Вконтакте"></a>
 					</li>
 		      <li>
-		      	<a class="social-button-fb" href="#"><img src="img/social/fb.svg" alt="Фейсбук"></a>
+		      	<a class="social-button" href="#"><img src="img/social/fb.svg" alt="Фейсбук"></a>
 		      </li>
 		      <li>
-		      	<a class="social-button-insta" href="#"><img src="img/social/insta.svg" alt="Инстаграмм"></a>
+		      	<a class="social-button" href="#"><img src="img/social/insta.svg" alt="Инстаграмм"></a>
 		      </li>
 				</ul>			
 			</div>
@@ -216,6 +245,7 @@
 			</div>	
 		</section>
 	</footer>
+	<script src="js/main.js"></script>
 </body>
 </html>
 
