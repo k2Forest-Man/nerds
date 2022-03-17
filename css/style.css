@@ -713,7 +713,7 @@ img {
 }
 
 .social-network-list li:active img {
-	opacity: 0.7;
+	opacity: 0.3;
 }
 
 
