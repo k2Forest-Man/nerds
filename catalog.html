@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
-  <title>Дизайн-студия Нёрдс</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- ?????? -->
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- ?????? -->
+	<title>Дизайн-студия Нёрдс</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css"/>
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/180.png">
-  <link rel="manifest" href="manifest.webmanifest">
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="icon" href="favicon.ico">
+	<link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="img/favicons/180.png">
+	<link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
 
-	<header class="main-header"> <!-- Шапка сайта -->
-			<nav class="main-navigation"> <!-- Навигация -->
-				<div class="nav-wrapper container">
-					<div class="main-header-logo">
-						<a href="index.html">
-							<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
-						</a>
-					</div>
-					<ul class="site-navigation">
-						<li><a class="link-navigation" href="index.html">Студия</a></li>
-						<li><a class="link-navigation" href="#">Клиенты</a></li>
-						<li class="active-link"><a class="link-navigation" href="catalog.html">Магазин</a></li>
-						<li><a class="link-navigation" href="#">Контакты</a></li>
-					</ul>
-					<div class="basket">
-						<a href="#" class="basket-link"><img class="img-basket" src="img/cart-icon.svg" width="15" height="11" alt="Корзина">Корзина</a>
-					</div>			
+	<header class="main-header">
+		<nav class="main-navigation">
+			<div class="nav-wrapper container">
+				<div class="main-header-logo">
+					<a href="index.html">
+						<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+					</a>
 				</div>
-			</nav>				
+				<ul class="site-navigation">
+					<li><a class="link-navigation" href="index.html">Студия</a></li>
+					<li><a class="link-navigation" href="#">Клиенты</a></li>
+					<li class="active-link"><a class="link-navigation" href="catalog.html">Магазин</a></li>
+					<li><a class="link-navigation" href="#">Контакты</a></li>
+				</ul>
+				<div class="basket">
+					<a href="#" class="basket-link"><img class="img-basket" src="img/cart-icon.svg" width="15" height="11"
+							alt="Корзина">Корзина</a>
+				</div>
+			</div>
+		</nav>
 	</header>
 
 	<main>
@@ -47,24 +49,38 @@
 		<div class="container">
 			<div class="container-grid">
 				<section class="section-filters">
-				<!-- <h2>Фильтр</h2> -->
+					<h2 class="visually-hidden">Фильтр</h2>
 					<form class="form-filter" method="post" action="https://echo.htmlacademy.ru">
-						<fieldset class="fieldset-box">
-		          <legend class="content-legend header-form">Стоимость:</legend>
-		          <div class="inputs-box">
-			          <div class="wrapper-range">
-			          	<input class="range-line" type="range" id="priceslider" name="priceslider" min="0" max="15000" step="1">
-			          </div>
-				        <label class="content-label">
-				         От<input class="input-field" name="from" type="text" value="0">
-				        </label>
-				        <label class="content-label label-before">
-				         До<input class="input-field" name="before" type="text" value="15000">
-				        </label>          	
-		          </div>
-		        </fieldset>
+						<fieldset class="fieldset-box filter-item">
+							<legend>Стоимость:</legend>
+							<div class="range-filter">
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar" style="
+											width: 70%;
+											margin-left: 0%
+										"></div>
+									</div>
+									<div class="toggle toggle-min" tabindex="0" style="
+										left: 5%
+									"></div>
+									<div class="toggle toggle-max" tabindex="0" style="
+										left: 65%
+									"></div>
+								</div>
+								<div class="price-controls">
+									<label class="min-price">
+										от <input type="number" name="min-price" value="0">
+									</label>
+									<label class="max-price">
+										до <input type="number" name="max-price" value="15000">
+									</label>
+								</div>
+							</div>
+						</fieldset>
 
-						<fieldset class="fieldset-box fieldset-grids"> <!-- радиокнопки, при одинаковом атрибуте name, value всегда должны быть разными!!! -->
+						<fieldset class="fieldset-box fieldset-grids">
+							<!-- радиокнопки, при одинаковом атрибуте name, value всегда должны быть разными!!! -->
 							<legend class="content-legend">Сетка:</legend>
 							<ul class="list-filter">
 								<li>
@@ -82,8 +98,9 @@
 							</ul>
 						</fieldset>
 
-						<fieldset class="fieldset-box"> <!-- чекбоксы -->
-							<legend class="content-legend">Особенности:</legend> 
+						<fieldset class="fieldset-box">
+							<!-- чекбоксы -->
+							<legend class="content-legend">Особенности:</legend>
 							<ul class="list-filter">
 								<li>
 									<input type="checkbox" name="slider" id="filter-slider" checked>
@@ -105,14 +122,14 @@
 									<input type="checkbox" name="basket" id="filter-basket">
 									<label for="filter-basket">Корзина</label>
 								</li>
-							</ul>				
+							</ul>
 						</fieldset>
 					</form>
 					<button class="button-filter" type="submit">Показать</button>
 				</section>
 
 				<section class="section-catalog">
-					
+
 					<div class="sort-list-grid">
 						<p class="sort-title">Сортировать:</p>
 						<ul class="sort-list">
@@ -120,10 +137,14 @@
 							<li><a class="link-sort-name" href="#">По типу</a></li>
 							<li><a class="link-sort-name" href="#">По названию</a></li>
 							<li>
-								<a class="sort-down" href="#"><!-- <img src="img/arrow-down.svg"> --></a>
+								<a class="sort-down" href="#">
+									<!-- <img src="img/arrow-down.svg"> -->
+								</a>
 							</li>
 							<li>
-								<a class="sort-up" href="#"><!-- <img src="img/arrow-up.svg"> --></a>
+								<a class="sort-up" href="#">
+									<!-- <img src="img/arrow-up.svg"> -->
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -199,7 +220,7 @@
 							<li><a class="button-page page-next" href="blank.html">Следующая</a></li>
 						</ul>
 					</div>
-				</section>			
+				</section>
 			</div>
 		</div>
 	</main>
@@ -220,7 +241,7 @@
 					<p class="block-tel"><a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
 					<a class="contacts-button" href="#!">Напишите нам</a>
 				</div>
-			</div>	
+			</div>
 
 			<div class="map-marker">
 				<img src="img/map-marker.png" width="231" height="190" alt="Указатель на студию">
@@ -232,7 +253,8 @@
 				<h3 class="visually-hidden">Форма отправки обратной связи</h3>
 				<h2>Напишите нам</h2>
 				<div class="button-close-popap">
-					<img class="close-button-popap" src="img/close-button-popap.svg" width="21" height="21" alt="Кнопка закрытия меню">
+					<img class="close-button-popap" src="img/close-button-popap.svg" width="21" height="21"
+						alt="Кнопка закрытия меню">
 				</div>
 
 				<form class="popap-form" method="post" action="https://echo.htmlacademy.ru">
@@ -248,7 +270,8 @@
 
 					<p class="popap-item-text">
 						<label for="letter-field">Текст письма:</label><br>
-						<input class="input-text" name="letter-field" id="letter-field" rows="5" cols="50" placeholder="В свободной форме"></input>
+						<input class="input-text" name="letter-field" id="letter-field" rows="5" cols="50"
+							placeholder="В свободной форме"></input>
 					</p>
 				</form>
 				<a class="popap-button" href="#">Отправить</a>
@@ -262,20 +285,21 @@
 					<li>
 						<a class="social-button" href="#"><img src="img/social/vk.svg" alt="Вконтакте"></a>
 					</li>
-		      <li>
-		      	<a class="social-button" href="#"><img src="img/social/fb.svg" alt="Фейсбук"></a>
-		      </li>
-		      <li>
-		      	<a class="social-button" href="#"><img src="img/social/insta.svg" alt="Инстаграмм"></a>
-		      </li>
-				</ul>			
+					<li>
+						<a class="social-button" href="#"><img src="img/social/fb.svg" alt="Фейсбук"></a>
+					</li>
+					<li>
+						<a class="social-button" href="#"><img src="img/social/insta.svg" alt="Инстаграмм"></a>
+					</li>
+				</ul>
 			</div>
 			<div class="social-slogan">
 				<p class="text-slogan">Давайте дружить, это выгодно!</p>
 				<p class="text-sail">Скидка 10% для друзей из социальных сетей.</p>
-			</div>	
+			</div>
 		</section>
 	</footer>
 	<script src="js/main.js"></script>
 </body>
+
 </html>

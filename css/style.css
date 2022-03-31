@@ -118,7 +118,6 @@ img {
 
 .main-header-logo {
 	width: 160px;
-	/*margin-right: 202px;*/
 }
 
 .main-header-logo:hover {
@@ -217,6 +216,7 @@ img {
 }
 
 .slider-item-pic {
+	height: 431px;
 	z-index: 1;
 }
 
@@ -757,7 +757,7 @@ img {
 	margin-bottom: 55px;
 }
 
-/* section-filters */
+/* Фильтр СТОИМОСТЬ */
 
 .form-filter {
 	margin-bottom: 48px;
@@ -770,59 +770,87 @@ img {
 	margin-bottom: 48px;
 }
 
-.fieldset-box p {
-	margin: 0;
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
 }
 
-.inputs-box {
-	width: 260px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 80px auto;
-  row-gap: 14px;
+.filter-item legend {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
-.wrapper-range {
-	width: 260px;
-	height: 80px;
-	background-color: var(--basic-grey);
-  border-radius: 3px;
-  margin-bottom: 14px;
-  grid-column: 1 / -1;
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
 }
 
-.range-line {
-	display: block;
-	width: 205px;
-	text-align: center;
-	margin: 33px auto;
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
 }
 
-.input-field {
-	color: var(--basic-color-slider);
-	width: 80px;
-	height: 38px;
-	border: none;
-	font-size: 16px;
-	text-align: center;
-	font-weight: 400;
-	line-height: 22px;
-	border-radius: 3px;
-	vertical-align: middle;
-	background-color: var(--basic-grey);
-	margin-left: 12px;
-	text-transform: uppercase;
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
 }
 
-.content-label {
-	font-weight: 400;
-	line-height: 22px;
-	text-transform: uppercase;
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
 }
 
-.label-before {
-	margin-left: auto;
+.range-controls .toggle-min {
+  left: 18px;
 }
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Фильтр СТОИМОСТЬ */
 
 .content-legend {
 	font-weight: 700;
