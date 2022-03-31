@@ -203,11 +203,19 @@ img {
 
 .slider-item {
 	display: grid;
-	grid-template-columns: 400px 760px ;
+	grid-template-columns: 400px 760px;
 	width: 1160;
 	height: 431px;
 	margin: 0;
 	white-space: nowrap;
+}
+
+.second-slide {
+	display: none;
+}
+
+.third-slide {
+	display: none;
 }
 
 .slider-item-text {
