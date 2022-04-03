@@ -101,7 +101,7 @@ img {
 	height: auto;
 }
 
-/* Шапка 100% width */
+/* Header */
 
 .main-header {
 	width: 100%;
@@ -110,7 +110,8 @@ img {
 
 .nav-wrapper {
 	display: flex;
-	padding-top: 45px;
+	padding-top: 49px;
+	align-items: center;
 }
 
 .active-link {
@@ -119,6 +120,7 @@ img {
 
 .main-header-logo {
 	width: 160px;
+	height: 65px;
 }
 
 .main-header-logo:hover {
@@ -131,18 +133,21 @@ img {
 
 .site-navigation {
 	display: flex;
-	margin: 0 auto;
+	margin: 13px 246px 0 203px;
 	list-style: none;
 	padding: 0;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
 }
 
 .site-navigation a {
-	display: block;
-	padding-bottom: 13px;
-	padding-top: 15px;
+	display: flex;
+	align-items: center;
+	padding-bottom: 12px;
+	padding-top: 	15px;
+}
+
+.active-link {
+	border-bottom: 2px solid var(--basic-red);
 }
 
 .site-navigation li:not(:last-child) {
@@ -152,16 +157,6 @@ img {
 .main-navigation a {
 	font-weight: 500;
 	text-transform: uppercase;
-}
-
-.basket {
-	display: flex;
-	align-items: center;
-	min-width: 120px;
-}
-
-.img-basket {
-	margin-right: 25px;
 }
 
 .link-navigation,
@@ -178,6 +173,22 @@ img {
 .basket-link:active {
 	color: var(--basic-black);
 	opacity: 0.3;
+}
+
+.basket-link {
+  position: relative;
+  padding-left: 41px;
+	margin-top: 13px;
+}
+
+.basket-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 15px;
+  height: 15px;
+  background: url("../img/basket-icon.svg") no-repeat 0 0;
 }
 
 /*Slider*/
@@ -415,11 +426,22 @@ img {
 	justify-content: space-around;
 	border-top: 2px solid var(--basic-grey);
 	border-bottom: 2px solid var(--basic-grey);
+	/* position: relative; */
 }
 
 .partners-item {
 	opacity: 0.2;
 }
+
+/* .partners-item::after {
+	content: "";
+	position: absolute;
+	left: 299px;
+	top: 65px;
+	width: 2px;
+	height: 52px;
+	background-color: var(--basic-grey);
+} */
 
 .partners-item:hover {
 	opacity: 1;
@@ -429,17 +451,12 @@ img {
 	opacity: 0.1;
 }
 
-.rectangle {
-	width: 1160px;
-	height: 2px;
-	background-color: var(--basic-grey);
-}
-
 /* Секция с картой */
 
 .studio-location {
 	height: 416px;
-	width: 100%;
+	width: 1440px;
+	margin: 0 auto;
 	background-image: url("../img/map.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -448,7 +465,7 @@ img {
 .studio-location .container {
 	display: grid;
 	grid-template-columns: 319px 1fr;
-	grid-gap: 372px;
+	grid-gap: 363px;
 }
 
 .contacts-map {
@@ -463,7 +480,7 @@ img {
 }
 
 .map-marker {
-	margin-top: 100px;
+	margin-top: 86px;
 	width: 231px;
 	height: 190px;
 }
