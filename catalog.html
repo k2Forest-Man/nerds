@@ -19,23 +19,20 @@
 <body class="page-body">
 
 	<header class="main-header">
-		<nav class="main-navigation">
-			<div class="nav-wrapper container">
+		<nav class="main-navigation container">
+			<div class="nav-wrapper">
 				<div class="main-header-logo">
 					<a href="index.html">
-						<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+						<img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип дизайн-студии Нёрдс">
 					</a>
 				</div>
 				<ul class="site-navigation">
 					<li><a class="link-navigation" href="index.html">Студия</a></li>
 					<li><a class="link-navigation" href="#">Клиенты</a></li>
-					<li class="active-link"><a class="link-navigation" href="catalog.html">Магазин</a></li>
+					<li><a class="link-navigation active-link" href="catalog.html">Магазин</a></li>
 					<li><a class="link-navigation" href="#">Контакты</a></li>
 				</ul>
-				<div class="basket">
-					<a href="#" class="basket-link"><img class="img-basket" src="img/cart-icon.svg" width="15" height="11"
-							alt="Корзина">Корзина</a>
-				</div>
+				<a href="#" class="basket-link">Корзина</a>
 			</div>
 		</nav>
 	</header>
@@ -223,28 +220,24 @@
 				</section>
 			</div>
 		</div>
-	</main>
 
-	<footer class="main-footer">
-		<section class="container-main-footer">
-			<div class="contacts-map">
-				<img src="img/map.png" width="100%" alt="Местоположение на карте">
-			</div>
-
-			<div class="modal-window">
-				<div class="wrapper-modal-window">
-					<h2 class="modal-window-header">Nёrds disign studio</h2>
-					<p class="contacts">
-						191186, Санкт-Петербург,<br>
-						ул. Б. Конюшенная, д. 19/8<br>
-					</p>
-					<p class="block-tel"><a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-					<a class="contacts-button" href="#!">Напишите нам</a>
+		<section class="studio-location">
+			<div class="container">
+				<div class="modal-window">
+					<div class="wrapper-modal-window">
+						<h2 class="modal-window-header">Nёrds disign studio</h2>
+						<p class="contacts">
+							191186, Санкт-Петербург,<br>
+							ул. Б. Конюшенная, д. 19/8<br>
+						</p>
+						<p class="block-tel"><a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+						<a class="contacts-button" href="#!">Напишите нам</a>
+					</div>
 				</div>
-			</div>
 
-			<div class="map-marker">
-				<img src="img/map-marker.png" width="231" height="190" alt="Указатель на студию">
+				<div class="map-marker">
+					<img src="img/map-marker.png" width="231" height="190" alt="Указатель на студию">
+				</div>
 			</div>
 		</section>
 
@@ -260,24 +253,27 @@
 				<form class="popap-form" method="post" action="https://echo.htmlacademy.ru">
 					<p class="popap-item">
 						<label for="name-name">Ваше имя:</label><br>
-						<input class="input-name" id="name-name" type="text" name="name" placeholder="Имя Фамилия">
+						<input class="field-input input-name" id="name-name" type="text" name="name" placeholder="Имя Фамилия">
 					</p>
 
 					<p class="popap-item">
 						<label for="login-email">Ваш email:</label><br>
-						<input class="input-email" id="login-email" type="email" name="email" placeholder="email@example.com">
+						<input class="field-input input-email" id="login-email" type="email" name="email"
+							placeholder="email@example.com">
 					</p>
 
 					<p class="popap-item-text">
 						<label for="letter-field">Текст письма:</label><br>
-						<input class="input-text" name="letter-field" id="letter-field" rows="5" cols="50"
+						<input class="field-input input-text" name="letter-field" id="letter-field" rows="5" cols="50"
 							placeholder="В свободной форме"></input>
 					</p>
 				</form>
 				<a class="popap-button" href="#">Отправить</a>
 			</div>
 		</section>
+	</main>
 
+	<footer class="main-footer">
 		<section class="social-footer container">
 			<h2 class="visually-hidden">Мы в соцсетях</h2>
 			<div class="social-network">
