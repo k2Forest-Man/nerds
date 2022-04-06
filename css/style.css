@@ -219,7 +219,7 @@ img {
 .slider-item {
 	display: grid;
 	grid-template-columns: 400px 760px;
-	width: 1160;
+	width: 1160px;
 	height: 431px;
 	margin: 0;
 	white-space: nowrap;
@@ -234,13 +234,32 @@ img {
 }
 
 .slider-item-text {
-	margin-top: 78px;
-	z-index: 0;
+	padding-top: 78px;
+	display: flex;
+	flex-direction: column;
 }
 
-.slider-item-pic {
+.slider-pic {
 	height: 431px;
-	z-index: 1;
+	width: 760px;
+}
+
+.slide-phones {
+	background-image: url("../img/slides/slide-phones.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.slide-monitors {
+	background-image: url("../img/slides/slide-monitors.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.slide-tablets {
+	background-image: url("../img/slides/slide-tablets.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .slider-item-text .header-slider {
@@ -248,7 +267,7 @@ img {
 }
 
 .slider-item-text .desc-slider {
-	margin-bottom: 37px;
+	margin-bottom: 38px;
 }
 
 .slider-button {
@@ -260,10 +279,14 @@ img {
 	display: inline-block;
 	background-color: var(--basic-red);
 	color: var(--basic-white);
-	padding: 16px 54px 16px 54px;
+	padding: 16px 0;
 	border-radius: 3px;
 	font-weight: 500;
 	line-height: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 240px;
 }
 
 .slider-button:hover {
