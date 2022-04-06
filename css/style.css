@@ -145,7 +145,7 @@ img {
 	display: flex;
 	align-items: center;
 	padding-bottom: 12px;
-	padding-top: 	15px;
+	padding-top: 15px;
 }
 
 .active-link {
@@ -178,19 +178,19 @@ img {
 }
 
 .basket-link {
-  position: relative;
-  padding-left: 41px;
+	position: relative;
+	padding-left: 41px;
 	margin-top: 13px;
 }
 
 .basket-link::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 4px;
-  width: 15px;
-  height: 15px;
-  background: url("../img/basket-icon.svg") no-repeat 0 0;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 4px;
+	width: 15px;
+	height: 15px;
+	background: url("../img/basket-icon.svg") no-repeat 0 0;
 }
 
 /*Slider*/
@@ -276,37 +276,39 @@ img {
 }
 
 .slider-controls {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  right: 533px;
-  bottom: 96px;
-  width: 88px;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	right: 533px;
+	bottom: 96px;
+	width: 88px;
 	z-index: 3;
 }
 
 .button-slider {
-  position: relative;
-  padding: 0;
-  width: 18px;
-  height: 18px;
-  background-color: var(--basic-white);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
+	position: relative;
+	padding: 0;
+	width: 18px;
+	height: 18px;
+	background-color: var(--basic-white);
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
 }
 
 .current-slider::before {
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: 5px;
-  width: 2px;
-  height: 2px;
-  background-color: transparent;
-  border: 3px solid var(--slider-button);
-  border-radius: 50%;
+	content: "";
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	width: 2px;
+	height: 2px;
+	background-color: transparent;
+	border: 3px solid var(--slider-button);
+	border-radius: 50%;
 }
+
+/* section class="advantages" */
 
 .advantages-list {
 	list-style: none;
@@ -319,9 +321,30 @@ img {
 	margin-bottom: 80px;
 }
 
-.advantages-item img {
+.advantages-logo {
+	width: 300px;
+	height: 146px;
 	margin-bottom: 25px;
 }
+
+.logo-websites {
+	background-image: url("../img/services/laptop.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.logo-applications {
+	background-image: url("../img/services/applications.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.logo-presentations {
+	background-image: url("../img/services/presentations.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 
 .advantages-header {
 	font-weight: 700;
@@ -332,17 +355,21 @@ img {
 
 .advantages-item p {
 	margin-top: 0px;
-	margin-bottom: 48px;
+	margin-bottom: 32px;
 }
 
 
 .advantages-button {
 	color: var(--basic-white);
-	padding: 17px 40px 15px 40px;
+	padding: 17px 0;
 	font-weight: 500;
 	line-height: 18px;
 	border-radius: 3px;
 	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 160px;
 }
 
 .button-laptop {
@@ -427,13 +454,13 @@ img {
 }
 
 .services-item::before {
-  content: "";
-  position: absolute;
-  top: 12px;
-  left: 0px;
-  width: 25px;
-  height: 2px;
-  background-color: var(--basic-red);
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 0px;
+	width: 25px;
+	height: 2px;
+	background-color: var(--basic-red);
 }
 
 .statistics img {
