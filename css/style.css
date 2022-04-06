@@ -552,33 +552,78 @@ img {
 	padding: 46px 0 44px 0;
 	margin: 0;
 	display: flex;
-	align-items: center;
 	justify-content: space-around;
 	border-top: 2px solid var(--basic-grey);
 	border-bottom: 2px solid var(--basic-grey);
-	/* position: relative; */
 }
 
-.partners-item {
+.after-academy {
+	width: 199px;
+	height: 68px;
+	margin-top: 17px;
+}
+
+.barbershop {
+	width: 209px;
+	height: 90px;
+}
+
+.pink {
+	width: 185px;
+	height: 52px;
+	margin-top: 19px;
+}
+
+.mishka {
+	width: 173px;
+	height: 84px;
+	margin-top: 6px;
+}
+
+.partners-item a {
 	opacity: 0.2;
 }
 
-/* .partners-item::after {
-	content: "";
-	position: absolute;
-	left: 299px;
-	top: 65px;
-	width: 2px;
-	height: 52px;
-	background-color: var(--basic-grey);
-} */
-
-.partners-item:hover {
+.partners-item a:hover {
 	opacity: 1;
 }
 
-.partners-item:active {
+.partners-item a:active {
 	opacity: 0.1;
+}
+
+.partners-item {
+	position: relative;
+}
+
+.after-academy:after {
+	content: "";
+	position: absolute;
+	right: -48px;
+	top: 1px;
+	width: 2px;
+	height: 52px;
+	background-color: var(--basic-grey);
+}
+
+.barbershop:after {
+	content: "";
+	position: absolute;
+	right: -44px;
+	top: 18px;
+	width: 2px;
+	height: 52px;
+	background-color: var(--basic-grey);
+}
+
+.pink:after {
+	content: "";
+	position: absolute;
+	right: -55px;
+	top: 1px;
+	width: 2px;
+	height: 52px;
+	background-color: var(--basic-grey);
 }
 
 /* Секция с картой */
@@ -840,7 +885,7 @@ img {
 	line-height: 22px;
 }
 
-/*social-footer*/
+/* section class="social-footer" */
 
 .social-network-list {
 	list-style: none;
@@ -903,9 +948,9 @@ img {
 	opacity: 0.3;
 }
 
-/*social-footer*/
+/* section class="social-footer" */
 
-/*CATALOG*/
+/*CATALOG .section-header */
 .section-header {
 	width: 100%;
 	padding: 78px 0px 108px 0px;
