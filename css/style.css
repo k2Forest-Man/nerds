@@ -31,6 +31,7 @@
 	--basic-white: #ffffff;
 	--basic-white-opacity: rgba(255, 255, 255, 0.3);
 	--basic-grey: #eeeeee;
+	--basic-grey-social: #e1e1e1;
 	--basic-button-hover: #dfdfdf;
 	--basic-button-active: #d5d5d5;
 	--button-gray-shadow: rgba(0, 1, 1, 0.1);
@@ -49,6 +50,7 @@
 	--color-contacts: #666666;
 	--color-text-sail: #444444;
 	--basic-input-grey: ##D7DCDE;
+	--slider-button: #c4c4c4;
 }
 
 /*Global*/
@@ -198,11 +200,6 @@ img {
 	margin-bottom: 80px;
 }
 
-.container-main-slider p {
-	margin-bottom: 0;
-	margin-top: 0;
-}
-
 .header-slider {
 	font-weight: 500;
 	font-size: 55px;
@@ -211,6 +208,12 @@ img {
 
 .main-slider {
 	color: var(--basic-color-slider);
+	position: relative;
+}
+
+.main-slider p {
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 .slider-item {
@@ -270,6 +273,39 @@ img {
 .slider-button:active {
 	background-color: var(--basic-red-active);
 	color: var(--basic-white-opacity);
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 533px;
+  bottom: 96px;
+  width: 88px;
+	z-index: 3;
+}
+
+.button-slider {
+  position: relative;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background-color: var(--basic-white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.current-slider::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 2px;
+  height: 2px;
+  background-color: transparent;
+  border: 3px solid var(--slider-button);
+  border-radius: 50%;
 }
 
 .advantages-list {
@@ -382,6 +418,22 @@ img {
 	margin-bottom: 0;
 	list-style: none;
 	padding: 0;
+	position: relative;
+}
+
+.services-item {
+	position: relative;
+	padding-left: 32px;
+}
+
+.services-item::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0px;
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-red);
 }
 
 .statistics img {
@@ -721,7 +773,7 @@ img {
 	width: 81px;
 	height: 81px;
 	border-radius: 50%;
-	background-color: var(--basic-grey);
+	background-color: var(--basic-grey-social);
 	display: flex;
 	align-items: center;
 	justify-content: center;
