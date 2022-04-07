@@ -303,11 +303,9 @@ img {
 
 .slider-controls {
 	display: flex;
-	justify-content: space-between;
 	position: absolute;
 	right: 533px;
 	bottom: 96px;
-	width: 88px;
 	z-index: 3;
 }
 
@@ -320,6 +318,10 @@ img {
 	border: none;
 	border-radius: 50%;
 	cursor: pointer;
+}
+
+.button-slider:not(:last-child) {
+	margin-right: 17px;
 }
 
 .current-slider::before {
