@@ -49,7 +49,7 @@
 	--basic-yellow-active: #e5a722;
 	--color-contacts: #666666;
 	--color-text-sail: #444444;
-	--basic-input-grey: ##D7DCDE;
+	--basic-input-grey: #d7dcde;
 	--slider-button: #c4c4c4;
 }
 
@@ -296,6 +296,7 @@ img {
 .slider-button:active {
 	background-color: var(--basic-red-active);
 	color: var(--basic-white-opacity);
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .slider-controls {
@@ -409,6 +410,7 @@ img {
 .button-laptop:active {
 	background-color: var(--basic-red-active);
 	color: var(--basic-white-opacity);
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .button-phones {
@@ -422,6 +424,7 @@ img {
 .button-phones:active {
 	background-color: var(--basic-green-active);
 	color: var(--basic-white-opacity);
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .button-presentations {
@@ -435,6 +438,7 @@ img {
 .button-presentations:active {
 	background-color: var(--basic-yellow-active);
 	color: var(--basic-white-opacity);
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .wrapper-advantages-list {
@@ -620,7 +624,7 @@ img {
 	content: "";
 	position: absolute;
 	right: -55px;
-	top: 1px;
+	top: -1px;
 	width: 2px;
 	height: 52px;
 	background-color: var(--basic-grey);
@@ -707,6 +711,7 @@ img {
 .contacts-button:active {
 	background-color: var(--basic-red-active);
 	color: var(--basic-white-opacity);
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 /*popap-form*/
@@ -763,8 +768,8 @@ img {
 
 .input-name {
 	width: 356px;
-	height: 50px;
-	margin: 9px 0 0;
+	height: 46px;
+	margin-top: 9px;
 	padding: 0;
 }
 
@@ -774,25 +779,21 @@ img {
 
 .input-email {
 	width: 356px;
-	height: 50px;
-	margin: 9px 0 0;
-	padding: 0;
-}
-
-.input-text {
-	width: 756px;
-	height: 118px;
-	margin: 9px 0 0;
+	height: 46px;
+	margin-top: 9px;
 	padding: 0;
 }
 
 .popap-item-text {
-	margin-bottom: 0;
+	margin-top: 34px;
 }
 
-/* .field-input {
-	border-color: var(--basic-input-grey);
-} */
+.input-text {
+	width: 756px;
+	height: 114px;
+	margin-top: 9px;
+	padding: 0;
+}
 
 .popap h2 {
 	font-size: 45px;
@@ -812,14 +813,17 @@ img {
 .popap-button {
 	background-color: var(--basic-red);
 	color: var(--basic-white);
-	padding: 17px 0;
+	padding: 17px 0 15px 0;
 	border-radius: 3px;
 	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
 	text-transform: uppercase;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	max-width: 260px;
+	width: 260px;
 }
 
 .popap-button:hover {
@@ -829,6 +833,7 @@ img {
 .popap-button:active {
 	background-color: var(--basic-red-active);
 	color: var(--basic-white-opacity);
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 /*popap-form*/
