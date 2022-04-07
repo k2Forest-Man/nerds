@@ -1098,6 +1098,12 @@ img {
 	margin-bottom: 48px;
 }
 
+/* fieldset-grids */
+
+.fieldset-grids {
+	margin-bottom: 47px;
+}
+
 .list-filter {
 	list-style: none;
 	padding: 0;
@@ -1105,11 +1111,45 @@ img {
 }
 
 .list-filter li:not(:last-child) {
-	margin-bottom: 12px;
+	margin-bottom: 15px;
 }
 
-.fieldset-grids {
-	margin-bottom: 47px;
+.list-filter li {
+  padding-left: 36px;
+	position: relative;
+  cursor: pointer;
+}
+
+.input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 17px;
+  height: 17px;
+  border: 4px solid var(--header-card-product);
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 9px;
+  height: 9px;
+  background-color: var(--header-card-product);
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.input-radio:hover + label::before {
+  opacity: 1;
+}
+
+.input-radio:checked:hover + label::after {
+  opacity: 1;
 }
 
 .button-filter {
