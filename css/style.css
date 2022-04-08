@@ -1322,7 +1322,7 @@ img {
 	text-align: center;
 	width: 100%;
 	margin: 0;
-	display: none;
+	display: block;
 	position: absolute;
 	bottom: 0px;
 }
@@ -1355,7 +1355,7 @@ img {
 
 .card-product p {
 	margin-top: 12px;
-	margin-bottom: 44px;
+	margin-bottom: 32px;
 }
 
 .description-product {
