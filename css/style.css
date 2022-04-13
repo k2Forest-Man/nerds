@@ -1117,7 +1117,11 @@ img {
 .list-filter li {
   padding-left: 36px;
 	position: relative;
-  cursor: pointer;
+}
+
+.list-filter label,
+.list-filter input {
+	cursor: pointer;
 }
 
 .input-radio + label::before {
@@ -1163,6 +1167,7 @@ img {
 	border-radius: 3px;
 	text-transform: uppercase;
 	background-color: var(--basic-grey);
+	cursor: pointer;
 }
 
 .button-filter:hover {
