@@ -53,6 +53,9 @@
 	--slider-button: #c4c4c4;
 	--basic-black-arrows: #231f20;
 	--header-card-product: #4d4d4d;
+	--price-basic-white: #f1f1f1;
+	--shadow-white: #cfcfcf;
+	--shadow-price-gray: #ababab;
 }
 
 /*Global*/
@@ -1033,19 +1036,19 @@ img {
 	padding-top: 39px;
 	padding-right: 20px;
 	padding-left: 20px;
-	background-color: #f1f1f1;
+	background-color: var(--price-basic-white);
 	border-radius: 5px;
 }
 
 .range-controls .scale {
 	height: 2px;
-	background: #d7dcde;
+	background: var(--basic-input-grey);
 }
 
 .range-controls .bar {
 	width: 70%;
 	height: 2px;
-	background: #00ca74;
+	background: var(--basic-green);
 }
 
 .range-controls .toggle {
@@ -1055,10 +1058,10 @@ img {
 	width: 4px;
 	height: 4px;
 	padding: 0;
-	border: 8px solid #ffffff;
-	background-color: #ababab;
+	border: 8px solid var(--basic-white);
+	background-color: var(--shadow-price-gray);
 	border-radius: 50%;
-	box-shadow: 0 2px 1px 0 #cfcfcf;
+	box-shadow: 0 2px 1px 0 var(--shadow-white);
 	cursor: pointer;
 }
 
@@ -1089,7 +1092,7 @@ img {
 	color: #283136;
 	border: none;
 	border-radius: 5px;
-	background: #f1f1f1;
+	background-color: var(--price-basic-white);
 	font-family: inherit;
 	font-size: inherit;
 }
