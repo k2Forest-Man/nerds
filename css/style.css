@@ -957,8 +957,6 @@ img {
 	opacity: 0.3;
 }
 
-/* section class="social-footer" */
-
 /*CATALOG .section-header */
 .section-header {
 	width: 100%;
@@ -1003,9 +1001,17 @@ img {
 	margin-bottom: 48px;
 }
 
-.range-filter {
-	width: 260px;
-	margin-top: 49px;
+.content-legend {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.filter-item {
+	margin-bottom: 54px;
 }
 
 .filter-item legend {
@@ -1013,6 +1019,11 @@ img {
 	line-height: 30px;
 	text-transform: uppercase;
 	font-weight: 700;
+}
+
+.range-filter {
+	width: 260px;
+	margin-top: 49px;
 }
 
 .range-controls {
@@ -1083,21 +1094,6 @@ img {
 	font-size: inherit;
 }
 
-/* Фильтр СТОИМОСТЬ */
-
-.content-legend {
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 30px;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-	padding: 0;
-}
-
-.header-form {
-	margin-bottom: 48px;
-}
-
 /* fieldset-grids */
 
 .fieldset-grids {
@@ -1155,6 +1151,8 @@ img {
 .input-radio:checked:hover + label::after {
   opacity: 1;
 }
+
+/* fieldset-features */
 
 .button-filter {
 	color: var(--basic-black);
