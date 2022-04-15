@@ -51,6 +51,7 @@
 	--color-text-sail: #444444;
 	--basic-input-grey: #d7dcde;
 	--slider-button: #c4c4c4;
+	--light-gray-button: #c1c1c1;
 	--basic-black-arrows: #231f20;
 	--header-card-product: #4d4d4d;
 	--price-basic-white: #f1f1f1;
@@ -321,6 +322,9 @@ img {
 	border: none;
 	border-radius: 50%;
 	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .button-slider:not(:last-child) {
@@ -330,12 +334,10 @@ img {
 .current-slider::before {
 	content: "";
 	position: absolute;
-	left: 5px;
-	top: 5px;
-	width: 2px;
-	height: 2px;
+	width: 4px;
+	height: 4px;
 	background-color: transparent;
-	border: 3px solid var(--slider-button);
+	border: 2px solid var(--light-gray-button);
 	border-radius: 50%;
 }
 
@@ -1157,6 +1159,42 @@ img {
 
 /* fieldset-features */
 
+.features-input + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  background: url("../img/checkbox-off.svg") no-repeat 0 0;
+  opacity: 0.4;
+}
+
+.features-input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 23px;
+  background: url("../img/checkbox-on.svg");
+  opacity: 0.4;
+}
+
+.features-input:checked + label::before {
+  display: none;
+}
+
+.features-input:hover + label::before {
+  opacity: 1;
+}
+
+.features-input:checked:hover + label::after {
+  opacity: 1;
+}
+
+/* fieldset-features */
+
 .button-filter {
 	color: var(--basic-black);
 	border: none;
@@ -1182,7 +1220,7 @@ img {
 	text-shadow: 0px 4px 4px var(--basic-black-active-shadow);
 }
 
-/* section-catalog */
+/* sort-list-grid */
 
 .sort-list-grid {
 	display: grid;
