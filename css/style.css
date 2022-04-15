@@ -333,12 +333,11 @@ img {
 
 .current-slider::before {
 	content: "";
-	position: absolute;
 	width: 4px;
 	height: 4px;
 	background-color: transparent;
-	border: 2px solid var(--light-gray-button);
 	border-radius: 50%;
+	border: 2px solid var(--light-gray-button);
 }
 
 /* section class="advantages" */
