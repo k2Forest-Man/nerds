@@ -136,7 +136,7 @@ a {
 
 .site-navigation {
 	display: flex;
-	margin: 13px 246px 0 203px;
+	margin: 13px auto 0 202px;
 	list-style: none;
 	padding: 0;
 	flex-wrap: wrap;
@@ -221,9 +221,8 @@ a {
 	display: grid;
 	grid-template-columns: 400px 760px;
 	width: 1160px;
-	height: 431px;
+	min-height: 431px;
 	margin: 0;
-	white-space: nowrap;
 }
 
 .second-slide {
@@ -241,7 +240,6 @@ a {
 }
 
 .slider-pic {
-	height: 431px;
 	width: 760px;
 }
 
@@ -393,7 +391,7 @@ a {
 
 .advantages-button {
 	color: var(--basic-white);
-	padding: 17px 0;
+	padding: 17px 40px;
 	font-weight: 500;
 	line-height: 18px;
 	border-radius: 3px;
@@ -401,7 +399,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 160px;
+	width: 81px;
 }
 
 .button-laptop {
@@ -568,6 +566,8 @@ a {
 	justify-content: space-around;
 	border-top: 2px solid var(--basic-grey);
 	border-bottom: 2px solid var(--basic-grey);
+	max-width: 1160px;
+	flex-wrap: wrap;
 }
 
 .after-academy {
@@ -893,6 +893,7 @@ a {
 	font-size: 36px;
 	line-height: 36px;
 	color: var(--basic-black);
+	width: 660px;
 }
 
 .text-sail {
