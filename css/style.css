@@ -57,6 +57,9 @@
 	--price-basic-white: #f1f1f1;
 	--shadow-white: #cfcfcf;
 	--shadow-price-gray: #ababab;
+	--popap-form-input: #d7dcde;
+	--popap-form-hover: #b4b9bb;
+	--popap-form-color: rgba(68, 68, 68, 0.5);
 }
 
 /*Global*/
@@ -220,7 +223,6 @@ a {
 .slider-item {
 	display: grid;
 	grid-template-columns: 400px 760px;
-	width: 1160px;
 	min-height: 431px;
 	margin: 0;
 }
@@ -234,7 +236,7 @@ a {
 }
 
 .slider-item-text {
-	padding-top: 78px;
+	padding: 79px 0;
 	display: flex;
 	flex-direction: column;
 }
@@ -272,20 +274,16 @@ a {
 .slider-button {
 	font-weight: 500;
 	text-transform: uppercase;
-}
-
-.slider-button {
-	display: inline-block;
 	background-color: var(--basic-red);
 	color: var(--basic-white);
-	padding: 16px 0;
+	padding: 17px 54px 15px 54px;
 	border-radius: 3px;
 	font-weight: 500;
 	line-height: 18px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 240px;
+	width: 132px;
 }
 
 .slider-button:hover {
@@ -383,7 +381,7 @@ a {
 	margin-bottom: 16px;
 }
 
-.advantages-item p {
+.advantages-desc {
 	margin-top: 0px;
 	margin-bottom: 32px;
 }
@@ -391,9 +389,10 @@ a {
 
 .advantages-button {
 	color: var(--basic-white);
-	padding: 17px 40px;
+	padding: 17px 40px 15px 39px;
 	font-weight: 500;
 	line-height: 18px;
+	border: none;
 	border-radius: 3px;
 	text-transform: uppercase;
 	display: flex;
@@ -704,7 +703,7 @@ a {
 .contacts-button {
 	color: var(--basic-white);
 	font-size: 16px;
-	padding: 17px 0 15px 0;
+	padding: 17px 44px 15px;
 	font-weight: 500;
 	line-height: 18px;
 	border-radius: 3px;
@@ -713,7 +712,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 219px;
+	width: 131px;
 }
 
 .contacts-button:hover {
@@ -778,36 +777,7 @@ a {
 	margin-bottom: 47px;
 }
 
-.input-name {
-	width: 356px;
-	height: 46px;
-	margin-top: 9px;
-	padding: 0;
-}
-
-.popap-item:nth-child(1) {
-	margin-right: 40px;
-}
-
-.input-email {
-	width: 356px;
-	height: 46px;
-	margin-top: 9px;
-	padding: 0;
-}
-
-.popap-item-text {
-	margin-top: 34px;
-}
-
-.input-text {
-	width: 756px;
-	height: 114px;
-	margin-top: 9px;
-	padding: 0;
-}
-
-.popap h2 {
+.popap-header {
 	font-size: 45px;
 	line-height: 53px;
 	font-weight: 700;
@@ -822,10 +792,65 @@ a {
 	color: var(--basic-black);
 }
 
+.popap-item input {
+	border: 2px solid var(--popap-form-input);
+	border-radius: 3px;
+	padding: 16px;
+	width: 324px;
+	margin-top: 9px;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: 'Roboto';
+	color: var(--popap-form-color);
+}
+
+.popap-item-text {
+	margin-top: 34px;
+}
+
+.popap-item-text textarea {
+	border: 2px solid var(--popap-form-input);
+	border-radius: 3px;
+	padding: 16px;
+	width: 724px;
+	resize: none;
+	margin-top: 9px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--popap-form-color);
+	font-family: 'Roboto';
+}
+
+.popap-item:nth-child(1) {
+	margin-right: 40px;
+}
+
+.popap-item input:hover,
+.popap-item-text textarea:hover {
+  border-color: var(--popap-form-hover);
+}
+
+.popap-item input:focus {
+  border-color: var(--basic-black);
+}
+
+.popap-item input:focus::placeholder {
+  color: var(--basic-black);
+}
+
+.popap-item-text textarea:focus {
+  border-color: var(--basic-black);
+}
+
+.popap-item-text textarea:focus::placeholder {
+  color: var(--basic-black);
+}
+
 .popap-button {
 	background-color: var(--basic-red);
 	color: var(--basic-white);
-	padding: 17px 0 15px 0;
+	padding: 17px 83px 15px 83px;
 	border-radius: 3px;
 	font-weight: 500;
 	font-size: 16px;
@@ -835,7 +860,7 @@ a {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	width: 260px;
+	width: 93px;
 }
 
 .popap-button:hover {
