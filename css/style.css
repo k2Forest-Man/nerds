@@ -774,7 +774,6 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	width: 760px;
-	margin-bottom: 47px;
 }
 
 .popap-header {
@@ -806,6 +805,7 @@ a {
 
 .popap-item-text {
 	margin-top: 34px;
+	margin-bottom: 47px;
 }
 
 .popap-item-text textarea {
@@ -852,6 +852,7 @@ a {
 	color: var(--basic-white);
 	padding: 17px 83px 15px 83px;
 	border-radius: 3px;
+	border: none;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
@@ -860,7 +861,7 @@ a {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	width: 93px;
+	width: 259px;
 }
 
 .popap-button:hover {
