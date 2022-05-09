@@ -755,7 +755,6 @@ a {
 .popap-form {
 	display: flex;
 	flex-wrap: wrap;
-	width: 760px;
 }
 
 .popap-header {
@@ -773,8 +772,8 @@ a {
   border: none;
   background-color: transparent;
   position: absolute;
-  right: 90px;
-  top: 78px;
+  right: 110px;
+  top: 88px;
   cursor: pointer;
 }
 
@@ -877,6 +876,7 @@ a {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
+	font-family: inherit;
 	text-transform: uppercase;
 	display: flex;
 	flex-wrap: wrap;
@@ -909,7 +909,7 @@ a {
 	grid-template-columns: 261px auto;
 	column-gap: 139px;
 	align-items: center;
-	padding-top: 68px;
+	padding-top: 63px;
 	padding-bottom: 68px;
 }
 
@@ -1200,11 +1200,13 @@ a {
 	opacity: 0.4;
 }
 
-.input-radio:hover+label::before {
+.input-radio:hover+label::before,
+.input-radio:focus+label::before {
 	opacity: 1;
 }
 
-.input-radio:checked:hover+label::after {
+.input-radio:checked:hover+label::after,
+.input-radio:checked:focus+label::after {
 	opacity: 1;
 }
 
@@ -1236,11 +1238,13 @@ a {
 	display: none;
 }
 
-.features-input:hover+label::before {
+.features-input:hover+label::before,
+.features-input:focus+label::before {
 	opacity: 1;
 }
 
-.features-input:checked:hover+label::after {
+.features-input:checked:hover+label::after,
+.features-input:checked:focus+label::after {
 	opacity: 1;
 }
 
@@ -1372,7 +1376,7 @@ a {
 }
 
 .wrapper-card {
-	width: 358px;
+	width: 360px;
 	position: relative;
 }
 
@@ -1383,7 +1387,7 @@ a {
 }
 
 .header-card-product {
-	width: 358px;
+	width: 360px;
 	display: flex;
 	align-items: center;
 	background-color: var(--header-card-product);
