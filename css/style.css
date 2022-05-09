@@ -60,6 +60,7 @@
 	--popap-form-input: #d7dcde;
 	--popap-form-hover: #b4b9bb;
 	--popap-form-color: rgba(68, 68, 68, 0.5);
+	--close-button-popap: #feccce;
 }
 
 /*Global*/
@@ -751,25 +752,6 @@ a {
 	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.close-button-popap {
-	position: absolute;
-	top: 78px;
-	right: 90px;
-}
-
-.button-close-popap {
-	cursor: pointer;
-	opacity: 0.3;
-}
-
-.button-close-popap:hover {
-	opacity: 1;
-}
-
-.button-close-popap:active {
-	opacity: 0.1;
-}
-
 .popap-form {
 	display: flex;
 	flex-wrap: wrap;
@@ -784,6 +766,45 @@ a {
 	margin-top: 0;
 	margin-bottom: 37px;
 }
+
+/* close-button-popap */
+
+.close-button-popap {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 90px;
+  top: 78px;
+  cursor: pointer;
+}
+
+.close-button-popap::before,
+.close-button-popap::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 4px;
+  background-color: var(--close-button-popap);
+}
+
+.close-button-popap::before {
+  transform: rotate(45deg);
+}
+
+.close-button-popap::after {
+  transform: rotate(-45deg);
+}
+
+.close-button-popap:hover::before,
+.close-button-popap:hover::after {
+	background-color: var(--basic-red);
+}
+
+.close-button-popap:active {
+	opacity: 0.1;
+}
+
+/* form class="popap-form" */
 
 .popap-form label {
 	line-height: 18px;

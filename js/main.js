@@ -1,5 +1,5 @@
 let contactsButton = document.querySelector ('.contacts-button');
-let closePopap = document.querySelector ('.button-close-popap');
+let closePopap = document.querySelector ('.close-button-popap');
 let popapForm = document.querySelector ('.popap');
 
 
