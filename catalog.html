@@ -103,7 +103,7 @@
 									<label for="filter-news">Новости</label>
 								</li>
 								<li>
-									<input class="features-input visually-hidden" type="checkbox" name="gallery" value="galery" id="filter-gallery">
+									<input class="features-input visually-hidden" type="checkbox" name="gallery" value="gallery" id="filter-gallery">
 									<label for="filter-gallery">Галерея</label>
 								</li>
 								<li>
@@ -127,8 +127,8 @@
 								<li><a class="link-sort-name" href="#">По названию</a></li>
 							</ul>
 							<ul class="sort-list-arrows">
-								<li><a href="#!"><div class="sort-arrow-down arrow-active"></div></a></li>
-								<li><a href="#!"><div class="sort-arrow-up"></div></a></li>
+								<li><a href="#!" aria-label="Сортировать по убыванию"><div class="sort-arrow-down arrow-active"></div></a></li>
+								<li><a href="#!"aria-label="Сортировать по возрастанию"><div class="sort-arrow-up"></div></a></li>
 							</ul>
 						</div>
 					</div>
@@ -228,10 +228,10 @@
 
 					<div class="wrapper-list-pagination">
 						<ul class="list-pagination">
-							<li><a class="button-page page-active">1</a></li>
-							<li><a class="button-page" href="#">2</a></li>
-							<li><a class="button-page" href="#">3</a></li>
-							<li><a class="button-page page-next" href="blank.html">Следующая</a></li>
+							<li><a class="button-page page-active" aria-label="Страница 1">1</a></li>
+							<li><a class="button-page" href="#" aria-label="Страница 2">2</a></li>
+							<li><a class="button-page" href="#" aria-label="Страница 3">3</a></li>
+							<li><a class="button-page page-next" href="blank.html" aria-label="Следующая страница">Следующая</a></li>
 						</ul>
 					</div>
 				</section>
@@ -257,37 +257,6 @@
 				</div>
 			</div>
 		</section>
-
-		<section class="popap">
-			<div class="wrapper-popap">
-				<h3 class="visually-hidden">Форма отправки обратной связи</h3>
-				<h2>Напишите нам</h2>
-				<div class="button-close-popap">
-					<img class="close-button-popap" src="img/close-button-popap.svg" width="21" height="21"
-						alt="Кнопка закрытия меню">
-				</div>
-
-				<form class="popap-form" method="post" action="https://echo.htmlacademy.ru">
-					<p class="popap-item">
-						<label for="name-name">Ваше имя:</label><br>
-						<input class="field-input input-name" id="name-name" type="text" name="name" placeholder="Имя Фамилия">
-					</p>
-
-					<p class="popap-item">
-						<label for="login-email">Ваш email:</label><br>
-						<input class="field-input input-email" id="login-email" type="email" name="email"
-							placeholder="email@example.com">
-					</p>
-
-					<p class="popap-item-text">
-						<label for="letter-field">Текст письма:</label><br>
-						<input class="field-input input-text" name="letter-field" id="letter-field" rows="5" cols="50"
-							placeholder="В свободной форме"></input>
-					</p>
-				</form>
-				<a class="popap-button" href="#">Отправить</a>
-			</div>
-		</section>
 	</main>
 
 	<footer class="main-footer">
@@ -295,15 +264,9 @@
 			<h2 class="visually-hidden">Мы в соцсетях</h2>
 			<div class="social-network">
 				<ul class="social-network-list">
-					<li>
-						<a class="social-button" href="#"><img src="img/social/vk.svg" alt="Вконтакте"></a>
-					</li>
-					<li>
-						<a class="social-button" href="#"><img src="img/social/fb.svg" alt="Фейсбук"></a>
-					</li>
-					<li>
-						<a class="social-button" href="#"><img src="img/social/insta.svg" alt="Инстаграмм"></a>
-					</li>
+					<li><a class="social-button vk" href="#!" aria-label="Ссылка на сайт Вконтакте"></a></li>
+					<li><a class="social-button fb" href="#!" aria-label="Ссылка на сайт Фэйсбук"></a></li>
+					<li><a class="social-button insta" href="#!" aria-label="Ссылка на сайт Инстаграмм"></a></li>
 				</ul>
 			</div>
 			<div class="social-slogan">
@@ -312,6 +275,33 @@
 			</div>
 		</section>
 	</footer>
+
+	<section class="popap">
+		<div class="wrapper-popap">
+			<h2 class="visually-hidden">Форма отправки обратной связи</h3>
+			<h3 class="popap-header">Напишите нам</h3>
+			<button class="close-button-popap" type="button" aria-label="Закрыть форму"></button>
+
+			<form class="popap-form" method="post" action="https://echo.htmlacademy.ru">
+				<div class="popap-item">
+					<label for="name-name">Ваше имя:</label><br>
+					<input class="field-input input-name" id="name-name" type="text" name="name" placeholder="Имя Фамилия" required>
+				</div>
+
+				<div class="popap-item">
+					<label for="login-email">Ваш email:</label><br>
+					<input class="field-input input-email" id="login-email" type="email" name="email"
+						placeholder="email@example.com" required>
+				</div>
+
+				<div class="popap-item-text">
+					<label for="letter-field">Текст письма:</label><br>
+					<textarea name="text-letter" id="letter-field" cols="15" rows="5" placeholder="В свободной форме" required></textarea>
+				</div>
+				<button class="popap-button" type="submit">Отправить</button>
+			</form>
+		</div>
+	</section>
 	<script src="js/main.js"></script>
 </body>
 

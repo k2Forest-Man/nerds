@@ -597,6 +597,11 @@ a {
 	opacity: 0.2;
 }
 
+.partners-item a:focus {
+	border-color: var(--basic-black);
+	opacity: 1;
+}
+
 .partners-item a:hover {
 	opacity: 1;
 }
@@ -772,31 +777,22 @@ a {
   border: none;
   background-color: transparent;
   position: absolute;
-  right: 110px;
-  top: 88px;
+  right: 105px;
+  top: 78px;
   cursor: pointer;
 }
 
-.close-button-popap::before,
-.close-button-popap::after {
-  content: "";
-  position: absolute;
-  width: 27px;
-  height: 4px;
-  background-color: var(--close-button-popap);
-}
-
 .close-button-popap::before {
-  transform: rotate(45deg);
+  content: "";
+	position: absolute;
+	width: 21px;
+	height: 21px;
+	background: url("../img/close-button-popap.svg") no-repeat 0 0;
+	opacity: 0.3;
 }
 
-.close-button-popap::after {
-  transform: rotate(-45deg);
-}
-
-.close-button-popap:hover::before,
-.close-button-popap:hover::after {
-	background-color: var(--basic-red);
+.close-button-popap:hover::before {
+	opacity: 1;
 }
 
 .close-button-popap:active {
