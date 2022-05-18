@@ -57,10 +57,10 @@
 	--price-basic-white: #f1f1f1;
 	--shadow-white: #cfcfcf;
 	--shadow-price-gray: #ababab;
-	--popap-form-input: #d7dcde;
-	--popap-form-hover: #b4b9bb;
-	--popap-form-color: rgba(68, 68, 68, 0.5);
-	--close-button-popap: #feccce;
+	--popup-form-input: #d7dcde;
+	--popup-form-hover: #b4b9bb;
+	--popup-form-color: rgba(68, 68, 68, 0.5);
+	--close-button-popup: #feccce;
 }
 
 /*Global*/
@@ -706,7 +706,7 @@ a {
 	margin-bottom: 34px;
 }
 
-.contacts-button {
+.button-open-popup {
 	color: var(--basic-white);
 	font-size: 16px;
 	padding: 17px 44px 15px;
@@ -721,19 +721,19 @@ a {
 	width: 131px;
 }
 
-.contacts-button:hover {
+.button-open-popup:hover {
 	background-color: var(--basic-red-hover);
 }
 
-.contacts-button:active {
+.button-open-popup:active {
 	background-color: var(--basic-red-active);
 	color: var(--basic-white-opacity);
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-/*popap-form*/
+/*popup-form*/
 
-.popap {
+.popup {
 	display: none;
 	z-index: 10;
 	position: fixed;
@@ -749,7 +749,7 @@ a {
 	z-index: 100;
 }
 
-.wrapper-popap {
+.wrapper-popup {
 	padding: 63px 100px 84px 100px;
 	width: 760px;
 	position: relative;
@@ -757,12 +757,12 @@ a {
 	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.popap-form {
+.popup-form {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.popap-header {
+.popup-header {
 	font-size: 45px;
 	line-height: 53px;
 	font-weight: 700;
@@ -771,9 +771,9 @@ a {
 	margin-bottom: 37px;
 }
 
-/* close-button-popap */
+/* close-button-popup */
 
-.close-button-popap {
+.close-button-popup {
   border: none;
   background-color: transparent;
   position: absolute;
@@ -782,33 +782,33 @@ a {
   cursor: pointer;
 }
 
-.close-button-popap::before {
+.close-button-popup::before {
   content: "";
 	position: absolute;
 	width: 21px;
 	height: 21px;
-	background: url("../img/close-button-popap.svg") no-repeat 0 0;
-	opacity: 0.3;
+	background: url("../img/close-button-popup.svg") no-repeat 0 0;
+	opacity: 0.6;
 }
 
-.close-button-popap:hover::before {
+.close-button-popup:hover::before {
 	opacity: 1;
 }
 
-.close-button-popap:active {
-	opacity: 0.1;
+.close-button-popup:active {
+	opacity: 0.2;
 }
 
-/* form class="popap-form" */
+/* form class="popup-form" */
 
-.popap-form label {
+.popup-form label {
 	line-height: 18px;
 	font-weight: 700;
 	color: var(--basic-black);
 }
 
-.popap-item input {
-	border: 2px solid var(--popap-form-input);
+.popup-item input {
+	border: 2px solid var(--popup-form-input);
 	border-radius: 3px;
 	padding: 16px;
 	width: 324px;
@@ -816,16 +816,16 @@ a {
 	font-size: 16px;
 	line-height: 18px;
 	font-family: 'Roboto';
-	color: var(--popap-form-color);
+	color: var(--popup-form-color);
 }
 
-.popap-item-text {
+.popup-item-text {
 	margin-top: 34px;
 	margin-bottom: 47px;
 }
 
-.popap-item-text textarea {
-	border: 2px solid var(--popap-form-input);
+.popup-item-text textarea {
+	border: 2px solid var(--popup-form-input);
 	border-radius: 3px;
 	padding: 16px;
 	width: 724px;
@@ -834,36 +834,36 @@ a {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 18px;
-	color: var(--popap-form-color);
+	color: var(--popup-form-color);
 	font-family: 'Roboto';
 }
 
-.popap-item:nth-child(1) {
+.popup-item:nth-child(1) {
 	margin-right: 40px;
 }
 
-.popap-item input:hover,
-.popap-item-text textarea:hover {
-  border-color: var(--popap-form-hover);
+.popup-item input:hover,
+.popup-item-text textarea:hover {
+  border-color: var(--popup-form-hover);
 }
 
-.popap-item input:focus {
+.popup-item input:focus {
   border-color: var(--basic-black);
 }
 
-.popap-item input:focus::placeholder {
+.popup-item input:focus::placeholder {
   color: var(--basic-black);
 }
 
-.popap-item-text textarea:focus {
+.popup-item-text textarea:focus {
   border-color: var(--basic-black);
 }
 
-.popap-item-text textarea:focus::placeholder {
+.popup-item-text textarea:focus::placeholder {
   color: var(--basic-black);
 }
 
-.popap-button {
+.popup-button {
 	background-color: var(--basic-red);
 	color: var(--basic-white);
 	padding: 17px 83px 15px 83px;
@@ -881,17 +881,17 @@ a {
 	width: 259px;
 }
 
-.popap-button:hover {
+.popup-button:hover {
 	background-color: var(--basic-red-hover);
 }
 
-.popap-button:active {
+.popup-button:active {
 	background-color: var(--basic-red-active);
 	color: var(--basic-white-opacity);
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-/*popap-form*/
+/*popup-form*/
 
 /*FOOOTER*/
 

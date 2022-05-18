@@ -1,12 +1,12 @@
-let contactsButton = document.querySelector ('.contacts-button');
-let closePopap = document.querySelector ('.close-button-popap');
-let popapForm = document.querySelector ('.popap');
+let contactsButton = document.querySelector ('.button-open-popup');
+let closepopup = document.querySelector ('.close-button-popup');
+let popupForm = document.querySelector ('.popup');
 
 
 contactsButton.addEventListener('click', () => {
-  popapForm.style.display = 'flex';
+  popupForm.style.display = 'flex';
 })
 
-closePopap.addEventListener('click', () => {
-  popapForm.style.display = 'none';
+closepopup.addEventListener('click', () => {
+  popupForm.style.display = 'none';
 })
