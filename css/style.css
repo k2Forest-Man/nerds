@@ -749,6 +749,10 @@ a {
 	z-index: 100;
 }
 
+.popup-show {
+	display: flex;
+}
+
 .wrapper-popup {
 	padding: 63px 100px 84px 100px;
 	width: 760px;

@@ -5,10 +5,10 @@ const popupForm = document.querySelector ('.popup');
 
 buttonOpenPopup.addEventListener('click', (evt) => {
   evt.preventDefault();
-  popupForm.style.display = 'flex';
+  popupForm.classList.add('popup-show');
 });
 
 closePopup.addEventListener('click', (evt) => {
   evt.preventDefault();
-  popupForm.style.display = 'none';
+  popupForm.classList.remove('popup-show');
 });
