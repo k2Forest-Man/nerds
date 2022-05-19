@@ -1,12 +1,14 @@
-let contactsButton = document.querySelector ('.button-open-popup');
-let closepopup = document.querySelector ('.close-button-popup');
-let popupForm = document.querySelector ('.popup');
+const buttonOpenPopup = document.querySelector ('.button-open-popup');
+const closePopup = document.querySelector ('.close-button-popup');
+const popupForm = document.querySelector ('.popup');
 
 
-contactsButton.addEventListener('click', () => {
+buttonOpenPopup.addEventListener('click', (evt) => {
+  evt.preventDefault();
   popupForm.style.display = 'flex';
-})
+});
 
-closepopup.addEventListener('click', () => {
+closePopup.addEventListener('click', (evt) => {
+  evt.preventDefault();
   popupForm.style.display = 'none';
-})
+});
