@@ -731,7 +731,7 @@ a {
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-/*popup-form*/
+/* popup */
 
 .popup {
 	display: none;
@@ -853,6 +853,7 @@ a {
 
 .popup-item input:focus {
   border-color: var(--basic-black);
+	color: var(--basic-black);
 }
 
 .popup-item input:focus::placeholder {
@@ -861,6 +862,7 @@ a {
 
 .popup-item-text textarea:focus {
   border-color: var(--basic-black);
+	color: var(--basic-black);
 }
 
 .popup-item-text textarea:focus::placeholder {
