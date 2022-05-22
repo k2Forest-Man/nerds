@@ -223,16 +223,11 @@ a {
 
 .slider-item {
 	display: grid;
-	grid-template-columns: 400px 760px;
-	min-height: 431px;
-	margin: 0;
+	grid-template-columns: 538px min-content;
+	height: 431px;
 }
 
-.second-slide {
-	display: none;
-}
-
-.third-slide {
+.hidden-slide {
 	display: none;
 }
 
@@ -244,6 +239,10 @@ a {
 
 .slider-pic {
 	width: 760px;
+	height: 431px;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .slide-phones {
@@ -764,7 +763,7 @@ a {
 }
 
 .popup-error {
-  animation: shake 0.6s;
+	animation: shake 0.6s;
 }
 
 
@@ -800,16 +799,16 @@ a {
 /* close-button-popup */
 
 .close-button-popup {
-  border: none;
-  background-color: transparent;
-  position: absolute;
-  right: 105px;
-  top: 78px;
-  cursor: pointer;
+	border: none;
+	background-color: transparent;
+	position: absolute;
+	right: 105px;
+	top: 78px;
+	cursor: pointer;
 }
 
 .close-button-popup::before {
-  content: "";
+	content: "";
 	position: absolute;
 	width: 21px;
 	height: 21px;
@@ -870,25 +869,25 @@ a {
 
 .popup-item input:hover,
 .popup-item-text textarea:hover {
-  border-color: var(--popup-form-hover);
+	border-color: var(--popup-form-hover);
 }
 
 .popup-item input:focus {
-  border-color: var(--basic-black);
+	border-color: var(--basic-black);
 	color: var(--basic-black);
 }
 
 .popup-item input:focus::placeholder {
-  color: var(--basic-black);
+	color: var(--basic-black);
 }
 
 .popup-item-text textarea:focus {
-  border-color: var(--basic-black);
+	border-color: var(--basic-black);
 	color: var(--basic-black);
 }
 
 .popup-item-text textarea:focus::placeholder {
-  color: var(--basic-black);
+	color: var(--basic-black);
 }
 
 .popup-button {
@@ -1559,41 +1558,42 @@ a {
 /* Animations */
 
 @keyframes bounce {
-  0% {
-    transform: translateY(-2000px);
-  }
+	0% {
+		transform: translateY(-2000px);
+	}
 
-  70% {
-    transform: translateY(30px);
-  }
+	70% {
+		transform: translateY(30px);
+	}
 
-  90% {
-    transform: translateY(-10px);
-  }
+	90% {
+		transform: translateY(-10px);
+	}
 
-  100% {
-    transform: translateY(0);
-  }
+	100% {
+		transform: translateY(0);
+	}
 }
 
 @keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
 
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-10px);
-  }
+	0%,
+	100% {
+		transform: translateX(0);
+	}
 
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(10px);
-  }
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(10px);
+	}
 }
