@@ -15,7 +15,6 @@ try {
   isStorageSupport = false;
 }
 
-
 buttonOpenPopup.addEventListener('click', (evt) => {
   evt.preventDefault();
   popup.classList.add('popup-show');
